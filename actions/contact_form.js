@@ -11,8 +11,7 @@ module.exports = new datafire.Action({
     title: "lastName"
   }, {
     type: "string",
-    title: "email",
-    pattern: ".*@.*\\\\..*"
+    title: "email"
   }, {
     type: "string",
     title: "subject"

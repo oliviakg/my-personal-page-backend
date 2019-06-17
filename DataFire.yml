@@ -2,3 +2,9 @@ options:
   cors: true
 actions:
   contact_form: ./actions/contact_form.js
+paths:
+  /contact:
+    post:
+      action: contact_form
+      accounts:
+        google_gmail: oliviakgosselin@gmail.com

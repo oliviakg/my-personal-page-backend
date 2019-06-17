@@ -11,7 +11,8 @@ module.exports = new datafire.Action({
     title: "lastName"
   }, {
     type: "string",
-    title: "email"
+    title: "email",
+    pattern: ".*@.*\\\\..*"
   }, {
     type: "string",
     title: "subject"
@@ -22,7 +23,7 @@ module.exports = new datafire.Action({
   handler: async (input, context) => {
     let encodedMessage = await google_gmail.buildMessage({
       to: "oliviakgosselin@gmail.com:",
-      from: `input.firstName + ' ' + input.lastName + '<' + input.email + '>'`,
+      from: input.firstName + ' ' + input.lastName + '<' + input.email + '>',
       subject: input.subject,
       body: input.message,
     }, context);

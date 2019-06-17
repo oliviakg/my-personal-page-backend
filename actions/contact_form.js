@@ -28,7 +28,7 @@ module.exports = new datafire.Action({
     }, context);
     let message = await google_gmail.users.messages.send({
       userId: "me",
-      body: encodedMessage,
+      body: {raw: encodedMessage},
     }, context);
     return message;
   },

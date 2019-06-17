@@ -6,9 +6,13 @@ module.exports = new datafire.Action({
   handler: async (input, context) => {
     let encodedMessage = await google_gmail.buildMessage({
       to: "oliviakgosselin@gmail.com:",
+      from: `input.firstName + ' ' + input.lastName + '<' + input.email + '>'`,
+      subject: input.subject,
+      body: input.message,
     }, context);
     let message = await google_gmail.users.messages.send({
-      userId: oliviakgosselin,
+      userId: "me",
+      body: encodedMessage,
     }, context);
     return message;
   },

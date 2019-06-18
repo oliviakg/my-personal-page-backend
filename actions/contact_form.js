@@ -27,10 +27,10 @@ module.exports = new datafire.Action({
       body: input.message,
     }, context);
     let message = await google_gmail.users.messages.send({
-      userId: "me",
       body: {
         raw: encodedMessage,
       },
+      userId: "me",
     }, context);
     return message;
   },

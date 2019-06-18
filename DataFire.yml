@@ -6,4 +6,5 @@ paths:
   /contact:
     post:
       action: contact_form
-      accounts: {}
+      accounts:
+        google_gmail: oliviakgosselin@gmail.com

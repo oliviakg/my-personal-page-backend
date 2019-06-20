@@ -30,7 +30,7 @@ module.exports = new datafire.Action({
       body: {
         raw: encodedMessage,
       },
-      userId: input.email,
+      userId: "me",
     }, context);
     return message;
   },

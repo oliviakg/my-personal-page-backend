@@ -8,3 +8,14 @@ paths:
       action: contact_form
       accounts:
         google_gmail: oliviakgosselin@gmail.com
+tests:
+  test:
+    action: contact_form
+    input:
+      firstName: olivia
+      lastName: g
+      email: oliviakg@umich.edu
+      subject: hey
+      message: there
+    accounts:
+      google_gmail: oliviakgosselin@gmail.com

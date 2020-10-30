@@ -8,6 +8,9 @@ paths:
       action: contact_form
       accounts:
         google_gmail: oliviakgosselin@gmail.com
+  /paths1:
+    get:
+      action: contact_form
 tests:
   test:
     action: contact_form
@@ -43,6 +46,19 @@ tests:
       firstName: sdfg
       lastName: sdfg
       email: oliviakg@umich.edu
+      subject: asdf
+      message: asdf
+    accounts:
+      google_gmail: oliviakgosselin
+  test4:
+    action: contact_form
+    input: {}
+  test5:
+    action: contact_form
+    input:
+      firstName: asdf
+      lastName: asdf
+      email: oliviakgosselin@gmail.com
       subject: asdf
       message: asdf
     accounts:

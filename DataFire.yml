@@ -63,3 +63,6 @@ tests:
       message: asdf
     accounts:
       google_gmail: oliviakgosselin
+  test6:
+    action: contact_form
+    input: {}

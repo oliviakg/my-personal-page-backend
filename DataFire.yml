@@ -8,9 +8,6 @@ paths:
       action: contact_form
       accounts:
         google_gmail: oliviakgosselin@gmail.com
-  /paths1:
-    get:
-      action: contact_form
 tests:
   test:
     action: contact_form

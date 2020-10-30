@@ -19,3 +19,31 @@ tests:
       message: there
     accounts:
       google_gmail: oliviakgosselin@gmail.com
+  test1:
+    action: contact_form
+    input:
+      firstName: liv
+      lastName: gos
+      email: oliviakg@umich.edu
+      subject: asdf
+      message: asdf
+  test2:
+    action: contact_form
+    input:
+      firstName: adf
+      lastName: asdf
+      email: oliviakg@umich.edu
+      subject: asd
+      message: asdf
+    accounts:
+      google_gmail: oliviakgosselin
+  test3:
+    action: contact_form
+    input:
+      firstName: sdfg
+      lastName: sdfg
+      email: oliviakg@umich.edu
+      subject: asdf
+      message: asdf
+    accounts:
+      google_gmail: oliviakgosselin
